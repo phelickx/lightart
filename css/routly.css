@@ -1,0 +1,378 @@
+ @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+    /* background: #020104; */
+    background: #090212;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 400;
+    color: #6b6776;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 1000; /* Ensure the navigation bar is on top */
+    background: black; /* Remove the background to see through */
+}
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+.header {
+    margin-top: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: #FFF;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150PX;
+
+    /* background: linear-gradient(266deg, #D1A23C 48.27%, #F922F1 125.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+h2 {
+    color: #FFF;
+    font-family: Amaranth;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h3 {
+    color: #FFF;
+    font-family: Amaranth;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20PX;
+}
+P {
+    color: #FFF;
+    font-family: Amaranth;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    display: flex;
+    padding: 0;
+}
+.navButtons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navButtonss {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.primaryDark {
+    border-radius: 35px;
+    background: linear-gradient(269deg, #f8287f 0.36%, #D1A23C 100%);
+    padding: 8px 25px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.primaryDarkz {
+    border-radius: 35px;
+    border: 2px solid white;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-size: 13px;
+    font-size: 20px;
+}
+
+.primaryDarks {
+    display: flex;
+    padding: 10px 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 57px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(269deg, #f8287b 0.36%, #D1A23C 100%);
+}
+
+.secondaryDark {
+    display: flex;
+    padding: 10px 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 57px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+
+
+.primaryDark:hover {
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+.primaryDarkz:hover {
+    background: white;
+    border: 1px solid white;
+    color: black;
+}
+.secondaryDark:hover {
+    background: none;
+    border: 1px solid #8577A0;
+    color: #8577A0;
+}
+.navLink {
+    padding: 15px 30px;
+    color: white;
+}
+.navLink:hover {
+    font-size: 30px;
+}
+
+
+
+#sidebar {
+    height: 70%;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 90px;
+    left: 50px;
+    background: rgba(255, 255, 255, 0.13);
+
+    backdrop-filter: blur(30px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    color: white;
+    border-radius: 20px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+#openSidebarBtn {
+    display: none;
+}
+#sidebar a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+
+    transition: 0.3s;
+}
+#sidebar a.active {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgb(135, 128, 128);
+}
+#sidebar a:hover {
+    color: #5226FF;
+}
+
+#sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.logo-container {
+    overflow-x: hidden;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: moveLeft 4s linear infinite; /* 6s for a full loop, adjust as needed */
+}
+.immg {
+    height: 50px;
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30%);
+    }
+}
+.quote p {
+    padding: 50px;
+    margin-top: -200px;
+}
+.three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.tokenomics {
+    padding: 20px;
+}
+.tokens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 20px;
+}
+.ss span {
+    color: white;
+    font-size: 20px;
+}
+h4 {
+    color: #FFF;
+    font-family: Amaranth;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20PX;
+}
+.socio {
+    display: flex;
+    gap: 20px;
+}
+.message {
+    width: 100%;
+    padding: 50px;
+    border-radius: 39px;
+    border: 4px solid #FAFAFA;
+    background: linear-gradient(261deg, rgba(255, 4, 49, 0.11) 7.17%, rgba(255, 255, 255, 0.00) 66.36%);
+
+
+}
+.cc {
+    text-align: center;
+    font-size: 20px;
+
+}
+@media only screen and (max-width: 600px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        z-index: 1000; /* Ensure the navigation bar is on top */
+        background: black; /* Remove the background to see through */
+    }
+    .header {
+        margin-top: 200px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        color: #FFF;
+        font-family: 'Rubik Doodle Shadow', system-ui;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110PX;
+    
+        /* background: linear-gradient(266deg, #D1A23C 48.27%, #F922F1 125.96%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    }
+    h3 {
+        color: #FFF;
+        font-family: Amaranth;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20PX;
+    }
+    P {
+        color: #FFF;
+        font-family: Amaranth;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #sidebar {
+        top: 120px;
+        left: 20px;
+    }
+    #openSidebarBtn {
+        display: block;
+    }
+   .navLinks {
+       display: none;
+   }
+   .navButtons {
+       display: none;
+   }
+   .btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    }
+    .primaryDarks {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 57px;
+        color: white;
+        font-size: 20px;
+        background: linear-gradient(269deg, #f00861 0.36%, #ecaa1a 100%);
+    }
+    .three {
+        display: flex;
+        flex-direction: column;
+    }
+  
+}
